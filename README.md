@@ -29,3 +29,8 @@ Default Credentials: mobsf/mobsf
 [INFO] 29/May/2026 18:55:28 - MobSF Basic Environment Check
 No changes detected
 
+Para extraer APK
+adb shell pm list packages
+adb shell pm path com.app.nombreapp
+adb pull /data/app/fsdfsdaf/base.apk ./nombreapp.apk
+
