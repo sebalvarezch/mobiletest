@@ -34,3 +34,6 @@ adb shell pm list packages
 adb shell pm path com.app.nombreapp
 adb pull /data/app/fsdfsdaf/base.apk ./nombreapp.apk
 
+Para usar jadx
+
+jadx-gui /home/sevastos/ruta/aplicacion.apk
