@@ -37,3 +37,14 @@ adb pull /data/app/fsdfsdaf/base.apk ./nombreapp.apk
 Para usar jadx
 
 jadx-gui /home/sevastos/ruta/aplicacion.apk
+
+Para listar AVDs desde CMD
+C:\Users\<TU_USUARIO>\AppData\Local\Android\Sdk\emulator\emulator.exe -list-avds
+
+Ejecutar AVD luego de seleccionar uno e interceptar con BurpSuite capturando en puerto 8080
+C:\Users\<TU_USUARIO>\AppData\Local\Android\Sdk\emulator\emulator.exe -avd Pixel_6_API_34 -http-proxy http://127.0.0.1:8080 -writable-system
+
+Drozer: Instalar agente APK en el AVD
+Hacer que el puerto tcp 31415 del AVD tenga comunicación directa con el puerto 31415 del computador
+adb forward tcp:31415 tcp:31415
+
